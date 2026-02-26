@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+        <!-- Bootstrap JS -->
+     <script src="js/libs/bootstrap.min.js"></script>
+
+    <!-- Para hacer includes de código HTML en esta página -->
+     <script src="js/utils/include.js"></script>
+    <!-- Incrusta head -->
+    <script>include("/Layouts/head.html","head");</script>
+<html>    
+    <body  class="container-fluid bg-black text-white p-2">
+        <!-- Incrusta header -->
+        <script>include("/Layouts/header.html","body");</script>
+            <header class="col-sm-12 fixed-top pt-2 text-end" id="pageTitle">
+                <h4 class="fw-light">Texto</h4>
+            </header>
+        <main class="???">
+            <section id="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec porta turpis. Duis blandit, velit vel porttitor eleifend, risus lorem tempor nisl, posuere posuere lorem mauris eget massa. Aliquam eleifend gravida lacus, et aliquet risus mollis vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer non sagittis mi. Ut non laoreet massa, ut tincidunt tellus. Sed sollicitudin, diam eu elementum efficitur, tortor nulla malesuada nulla, ac semper nibh urna nec felis. Morbi sodales feugiat enim et varius. Praesent at imperdiet elit. Aenean pharetra in nisi et ultrices. Pellentesque aliquam rutrum velit sed tristique. Nullam sed lorem turpis. Ut nisl dui, malesuada a dui non, tempor porta metus. Cras lacinia lectus sed quam blandit, sit amet rhoncus quam iaculis. Aenean vestibulum lorem mauris.
+                </p>    
+                <p></p>Pellentesque molestie odio quam, sit amet blandit orci maximus eget. Vestibulum gravida est eget fermentum sollicitudin. Aenean non blandit mauris, non condimentum lacus. Mauris est arcu, suscipit quis ultrices at, porta nec nunc. Aenean sodales ipsum id elementum aliquam. Sed in libero justo. Nullam euismod magna vitae eros iaculis feugiat.
+                </p>
+            </section>
+            <section>
+                <h2>Listas</h2>
+                <ul><h3>No ordenada (ul)</h3>             
+                    <li>Primer listitem (li)</li>
+                    <li>Segundo listitem (li)</li>
+                    <li>Listitem (li) que contiene una lista subordinada
+                        <ul><h4>No ordenada subordinada a un listitem</h4>
+                            <li>Primer listitem (li)</li>
+                            <li>Segundo listitem (li)</li>
+                        </ul>  
+                    </li>
+                    <li>Cuarto listitem (li)</li>                     
+                </ul>
+
+                <ol><h3>Ordenada (ul)</h3>             
+                    <li>Primer listitem (li)</li>
+                    <li>Segundo listitem (li)</li>
+                    <li>Listitem (li) que contiene una lista subordinada
+                        <ol><h4>Ordenada subordinada a un listitem</h4>
+                            <li>Primer listitem (li)</li>
+                            <li>Segundo listitem (li)</li>
+                        </ol>  
+                    </li>
+                    <li>Cuarto listitem (li)</li>                     
+                </ol>
+            </section>
+        </main>
+        <!-- Incrusta footer -->
+        <script>include("/Layouts/footer.html","body");</script>
+    </body>
+</html>

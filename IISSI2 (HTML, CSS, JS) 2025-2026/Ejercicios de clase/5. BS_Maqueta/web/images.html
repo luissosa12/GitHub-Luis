@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+        <!-- Bootstrap JS -->
+     <script src="js/libs/bootstrap.min.js"></script>
+
+    <!-- Para hacer includes de código HTML en esta página -->
+     <script src="js/utils/include.js"></script>
+    <!-- Incrusta head -->
+    <script>include("/Layouts/head.html","head");</script>
+<html>    
+    <body class="container-fluid bg-black text-white p-2">
+        <!-- Incrusta header -->
+        <script>include("/Layouts/header.html","body");</script>
+
+            <header class="col-sm-12 fixed-top pt-2 text-end" id="pageTitle">
+                <h4 class="fw-light">Multimedia</h4>
+            </header>
+         <main class="???">
+            <section id="multiMedia" class="row">
+                <figure class="col-sm-4">
+                    <div class="card bg-black fst-italic text-center">
+                        <img src="https://i.ytimg.com/vi/VUj5-_kcb2M/maxresdefault.jpg" class="img-fluid">
+                        <figcaption>Fig.1. Portero</figcaption>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <div class="card bg-black fst-italic text-center">
+                        <video controls autoplay loop muted>
+                            <source type="video/mp4" src="https://placeit.net/uploads/preview_image/39642/image/preview.mp4" class="???">
+                        </video>
+                        <figcaption>Fig.2. Dragons</figcaption>
+                    </div>
+                </figure>                 
+                <figure class="col-sm-4">
+                    <div class="card bg-black fst-italic text-center">
+                        <video controls autoplay loop muted>
+                            <source type="video/mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="???">
+                        </video>
+                        <figcaption>Fig.3. Video courtesy of 
+                            <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</figcaption>
+                    </div>
+                </figure>     
+            </section>
+        </main>
+ <!-- Incrusta footer -->
+        <script>include("/Layouts/footer.html","body");</script>
+    </body>
+</html>

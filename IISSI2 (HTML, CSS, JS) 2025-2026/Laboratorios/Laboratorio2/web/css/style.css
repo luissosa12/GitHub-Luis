@@ -1,0 +1,117 @@
+/*
+Los selectores de tipo (generales) no llevan . al principio 
+Los selectores de campo (individuales) llevan . al principio 
+*/
+
+div.photo-block {
+    text-align: center;
+    border: 1px dashed green;
+    border-radius: 25%;
+}
+
+div.photo-title {
+    font-size: 140%;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+div.photo-score {
+    font-size: 130%;
+    font-family: monospace;
+}
+
+/*
+img.photo-image {
+    max-height: 200px;
+    width: auto;
+}
+*/
+
+/*
+width: 100% -> la imagen ocupa el 100% y se reduce de tamaño según la página
+height: auto -> mantiene la proporción según disminuye el tamaño de la página
+*/
+img.photo-image {
+    width: 80%;
+    height: auto;
+}
+
+
+body.dark {
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+/*
+a es para todos los enlaces; .dark es para los enlaces con la class="dark"
+si pongo body.dark > a -> cojo sólo los enlaces (a) que están dentro de un body class="dark"; así me ahorro errores si están en modo claro 
+*/
+
+body.dark>a {
+    color: aqua;
+}
+
+/*
+display: grid -> alineados
+display: block -> en bloque
+display: 
+*/
+.gallery-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+input,
+select {
+    background-color: #666666;
+    border-color: #999999;
+    color: white;
+}
+
+.input-group>label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    /*border: solid 2px white;*/
+}
+
+/*
+Añadir margen (espacio) entre cajas: 
+*/
+.input-group {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+div.title-block {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #333333;
+}
+
+#title {
+    font-size: 300%;
+    text-decoration: none;
+    color: #BBBBBB;
+    font-family: sans-serif;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    font-size: 120%;
+    font-style: italic;
+    color: #BBBBBB;
+    font-family: monospace;
+}
+
+div.navigation > a {
+    color: white;
+    font-size: 120%;
+    background-color: #555555;
+    font-family: monospace;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 150px;
+}
+

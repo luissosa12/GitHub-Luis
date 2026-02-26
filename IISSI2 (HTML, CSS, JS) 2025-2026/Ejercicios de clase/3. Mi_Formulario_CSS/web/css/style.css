@@ -1,0 +1,69 @@
+/*
+	CssForm.css
+*/
+body {
+	font-family helvetica;
+}
+header, footer {
+	background-color: grey;
+	color: white;
+	text-align: center;
+	padding: 0.2em;
+	border-radius: 10px;
+}
+main {
+	padding:0.5em;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+}
+section#data {	
+	display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 5px; /* Espacio entre columnas (opcional) */
+}
+
+form {
+	padding: 0em;
+}
+
+fieldset {
+	margin-bottom: 2em;
+	border-radius: 10px
+}
+
+legend {
+	text-align:center;
+	font-weight: bold;
+	font-size: x-large;
+	padding: 0.2em;
+	background-color: grey;
+	border-radius: 10px;
+}
+label {
+	display:block;
+	margin-bottom: 1em;
+	font-style: italic;
+	font-size: smaller;
+	font-weight: lighter
+}
+label input, label select {
+	width:100%;
+	display:block;
+	padding: 0.3em;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+#send input {
+	padding: 0.3em;
+	border-radius: 5px;
+}
+#send input[type=reset] {
+	float:right
+}
+#send input:hover {
+	background-color: grey;
+	color: white;
+}
+
+	

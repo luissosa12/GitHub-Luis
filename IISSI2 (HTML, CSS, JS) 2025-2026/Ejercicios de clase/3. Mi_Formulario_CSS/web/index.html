@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>CssForm</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/CssForm.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<!-- Hoja de estilo interna 
+		<style>
+			body { /* Familia de fuente*/
+				font-family: Arial, Helvetica, sans-serif
+			}
+			/*
+				Cabecera 
+			*/
+			header {
+				background-color: grey;
+				color: white;
+			}
+		</style>
+	-->
+
+		<!-- Hoja de estilo externa-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Formulario </h1>
+			<h2>CssForm.html</h2>
+        </header>
+        <main>
+		<!--  
+			Recepción en servidor con "post" y presentación de datos recibidos
+            <form method="post" action="https://www.w3schools.com/action_page.php" target="_blank">
+		-->
+			<form method="get" action="CssResponse.html" target="_blank">
+				<section id="data">
+					<fieldset>
+						<legend>Datos Personales</legend>
+						<label>Nombre
+							<input name="nombre" value="Magdalena Ruiz Perez" required pattern="^((\w+)+\s?){1,4}$" placeholder="Hasta cuatro palabras!">
+						</label>
+						<label>Fecha nacimiento
+							<input name="email" type="date" required value="2008-01-01" min="1949-12-31" max="2007-12-31">
+						</label>
+						<label>Región
+							<select required>
+								<option value="AN" selected>Andalucía</option>
+								<option value="CM">Castilla La Mancha</option>
+								<option value="EX">Extremadura</option>
+								<option value="M">Madrid</option>
+								<option value="MU">Murcia</option>
+							</select>
+						</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Datos de Usuario</legend>
+						<label>Usuario
+							<input name="usuario" value="Magdalena" required pattern="^(\w+){1}$" placeholder="Hasta cuatro palabras!">
+						</label>
+						<label>Email
+							<input name="email" type="email" required >
+						</label>    
+					</fieldset>
+
+                </section>
+				
+                <section id="send">
+                    <input type="submit"> <!--  <i class="fa fa-send">Enviar!</i> -->
+                    <input type="reset"> <!--  <i class="fa fa-undo">Inicializar!</i> -->
+                </section>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; TI, Feb/2026</p>
+        </footer>
+    </body>
+</html>

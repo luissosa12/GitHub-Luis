@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>CssResponse</title>
+        <meta charset="utf-8">
+		<!--  --> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Hoja de estilo externa-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1>Recepción del formulario en servidor web local</h1>
+			<h2>Response.html</h2>
+        </header>
+        <main>
+			<p>
+				Recibe el "Submit" la página Response.html
+			</p>
+			<p>
+				pero todavía no sabemos Javascript para analizar los datos enviados
+				ni podemos utilizar un lenguaje de servidor (tipo Python, PHP, ...) que haga esa función
+			</p>	
+			<p>
+				Pruebe a sustituir el destino del submit, cambiando el tag form existente por:
+			</p>
+			<mark>	
+				<code>
+					&lt;form method="post" action="https://www.w3schools.com/action_page.php" target="_blank"
+					&gt;
+				</code>
+			</mark>	
+			<br>
+			<h2>
+				¿Qué observa?
+			</h2>
+
+        </main>
+        <footer>
+            <p>&copy; TI, Feb/2026</p>
+        </footer>
+    </body>
+</html>
