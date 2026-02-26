@@ -1,9 +1,0 @@
-!SESSION Sat Mar 08 11:24:21 GMT+01:00 2025 ------------------------------------
-!ENTRY org.eclipse.equinox.launcher 4 0 2025-03-08 11:24:21.304
-!MESSAGE Exception launching the Eclipse Platform:
-!STACK
-java.io.FileNotFoundException: Could not find framework under c:\Users\lurex\Desktop\UNIVERSIDAD\1º\2º C\FP (Java)\plugins
-	at org.eclipse.equinox.launcher.Main.getBootPath(Main.java:990)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:585)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-
